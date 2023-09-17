@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Countries API whit color theme switcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <!--Heading Section-->
+      <section class="heading box-shadow-effect">
+        <div class="title">
+          <h2>Where in the world?</h2>
+        </div>
+        <div class="switcher">
+          <div class="switcher-icon">
+            <i class="fa-regular fa-moon moon-light-mode"></i>
+            <i class="fa-solid fa-moon moon-dark-mode"></i>
+          </div>
+          <div class="switcher-text">
+            <span>Dark Mode</span>
+          </div>
+        </div>
+      </section>
+      <!--Search and Region Section-->
+      <section class="search-region">
+        <div class="search-wrap">
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="search-input">
+            <input
+              class="input box-shadow-effect"
+              type="text"
+              placeholder="Search for a country..."
+            />
+          </div>
+        </div>
+        <div class="region-wrap">
+          <select name="region" class="box-shadow-effect">
+            <option value="0">Filter by Region</option>
+            <option value="1">Africa</option>
+            <option value="2">America</option>
+            <option value="3">Asia</option>
+            <option value="4">Europe</option>
+            <option value="5">Oceania</option>
+          </select>
+        </div>
+      </section>
+      <!--Countries Container-->
+      <section class="countries-container">
+        <div class="country-template box-shadow-effect">
+          <div class="country-image">
+            <img src="images/romania.png" alt="Romainian Flag" />
+          </div>
+          <div class="country-detail">
+            <div class="country-heading">
+              <h4>Romania</h4>
+            </div>
+            <div class="country-info">
+              <div class="country-row">
+                <p>Population:</p>
+                <div>19286123</div>
+              </div>
+              <div class="country-row">
+                <p>Region:</p>
+                <div>Europe</div>
+              </div>
+              <div class="country-row">
+                <p>Capital:</p>
+                <div>Bucharest</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="country-template box-shadow-effect">
+          <div class="country-image">
+            <img src="images/romania.png" alt="Romainian Flag" />
+          </div>
+          <div class="country-detail">
+            <div class="country-heading">
+              <h4>Romania</h4>
+            </div>
+            <div class="country-info">
+              <div class="country-row">
+                <p>Population:</p>
+                <div>19286123</div>
+              </div>
+              <div class="country-row">
+                <p>Region:</p>
+                <div>Europe</div>
+              </div>
+              <div class="country-row">
+                <p>Capital:</p>
+                <div>Bucharest</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>

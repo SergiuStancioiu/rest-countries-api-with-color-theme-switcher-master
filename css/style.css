@@ -1,0 +1,140 @@
+:root {
+  --dark-mode: hsl(209, 23%, 22%);
+  --very-dark-blue-background: hsl(207, 26%, 17%);
+  --very-dark-blue-text: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 14px;
+  font-family: "Nunito Sans";
+  margin: 0;
+}
+
+.dark-mode {
+  background-color: var(--dark-mode);
+  color: var(--white);
+}
+
+.dark-mode .search-input .input {
+  background-color: var(--dark-mode);
+  color: var(--white);
+}
+
+.dark-mode .switcher-icon .moon-dark-mode {
+  display: flex;
+}
+
+.dark-mode .switcher-icon .moon-light-mode {
+  display: none;
+}
+
+.dark-mode .region-wrap select {
+  background-color: var(--dark-mode);
+  color: var(--white);
+}
+
+.box-shadow-effect {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 33px;
+}
+
+.title h2 {
+  font-size: 16px;
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switcher-icon .moon-dark-mode {
+  display: none;
+}
+
+.switcher .switcher-text {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-region {
+  display: flex;
+  flex-direction: column;
+  padding: 33px;
+  gap: 40px;
+}
+
+.search-wrap {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  user-select: none;
+  padding-left: 20px;
+}
+
+.search-input .input {
+  padding: 20px 60px;
+  border: none;
+  border-radius: 5px;
+  width: calc(100% - 120px);
+  color: var(--very-dark-blue-text);
+}
+
+.search-input .input:focus-visible {
+  outline: none;
+}
+
+.region-wrap select {
+  padding: 20px 33px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  background-color: var(--white);
+}
+
+.region-wrap select:focus-visible {
+  outline: none;
+}
+
+.countries-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.country-image img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.country-detail {
+  padding: 30px;
+}
+
+.country-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.country-row p {
+  font-weight: 600;
+  margin: 0;
+}
