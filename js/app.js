@@ -10,11 +10,24 @@ fetch(apiUrl)
   })
   .then((data) => {
     data.forEach((country) => {
-      console.log(`Country Name: ${country.name.common}`);
-      console.log(`Capital: ${country.capital}`);
-      console.log(`Population: ${country.population}`);
-      console.log(`Region: ${country.region}`);
-      console.log("---");
+      const container = document.querySelector(".countries-container");
+      const template = document.querySelector("#country-template");
+
+      let cloneTemplate = template.content.cloneNode(true);
+
+      cloneTemplate.querySelector(".country-flag").textContent = country.flag;
+
+      cloneTemplate.querySelector(".country-heading").textContent =
+        country.name.common;
+
+      cloneTemplate.querySelector(".population").textContent =
+        country.population;
+
+      cloneTemplate.querySelector(".region").textContent = country.region;
+
+      cloneTemplate.querySelector(".capital").textContent = country.capital;
+
+      container.appendChild(cloneTemplate);
     });
   })
   .catch((error) => {

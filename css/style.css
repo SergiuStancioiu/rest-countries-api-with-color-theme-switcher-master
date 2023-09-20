@@ -119,6 +119,23 @@ body {
   gap: 60px;
 }
 
+.country-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-template {
+  width: 80%;
+}
+
+.country-flag {
+  font-size: 200px;
+  margin: 0;
+  text-align: center;
+  height: 200px;
+}
+
 .country-image img {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
