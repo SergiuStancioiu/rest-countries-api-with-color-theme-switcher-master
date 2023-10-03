@@ -18,7 +18,7 @@ body {
   color: var(--white);
 }
 
-.dark-mode .search-input .input {
+.dark-mode .search-input .search {
   background-color: var(--dark-mode);
   color: var(--white);
 }
@@ -87,7 +87,7 @@ body {
   padding-left: 20px;
 }
 
-.search-input .input {
+.search-input .search {
   padding: 20px 60px;
   border: none;
   border-radius: 5px;
@@ -95,7 +95,7 @@ body {
   color: var(--very-dark-blue-text);
 }
 
-.search-input .input:focus-visible {
+.search-input .search:focus-visible {
   outline: none;
 }
 
