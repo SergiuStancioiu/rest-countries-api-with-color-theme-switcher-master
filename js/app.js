@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   searchInput.addEventListener("keyup", searchInputOnKeyUp);
 
   fetchAllData();
-  enableDarkMode();
 });
 
 function fetchData(apiUrl) {
@@ -73,14 +72,6 @@ function regionSelectOnChange(event) {
   apiUrl.searchParams.set("fields", urlFields);
 
   fetchData(apiUrl);
-}
-
-function enableDarkMode() {
-  const darkModeBtn = document.querySelector(".switcher");
-
-  darkModeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-  });
 }
 
 function fetchAllData() {
