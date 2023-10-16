@@ -42,11 +42,17 @@ function loadASingleCountry(country) {
 
 function populateCountry(data) {
   const countryData = data[0];
-  const container = document.querySelector(".countries-container");
+  const container = document.querySelector(".country-container");
   const borderCountryTemplate = document.querySelector(
     "#border-country-template"
   );
   const template = document.querySelector("#single-country-template");
+
+  const removeCountiresContainer = document.querySelector(
+    ".countries-container"
+  );
+  removeCountiresContainer.classList.remove("countries-container");
+
   const nativeName = countryData.name.nativeName;
   let languagesArray = [];
   let languagesString = "";
@@ -133,6 +139,9 @@ function fetchData(apiUrl) {
 function populateCountries(data) {
   const container = document.querySelector(".countries-container");
   const template = document.querySelector("#country-template");
+  const removeCountiresContainer = document.querySelector(".country-container");
+
+  removeCountiresContainer.classList.remove("country-container");
 
   container.innerHTML = "";
 
