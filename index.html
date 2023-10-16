@@ -23,7 +23,9 @@
     <!--Header Section-->
     <header class="heading box-shadow-effect">
       <div class="title">
-        <h2>Where in the world?</h2>
+        <a href="index.html">
+          <h2>Where in the world?</h2>
+        </a>
       </div>
       <div class="switcher">
         <div class="switcher-icon">
@@ -69,7 +71,9 @@
       <template id="country-template">
         <div class="country-template box-shadow-effect">
           <div class="country-image">
-            <p class="country-flag"></p>
+            <a class="country-url" href="#">
+              <p class="country-flag"></p>
+            </a>
           </div>
           <div class="country-detail">
             <div class="country-heading">
@@ -90,6 +94,77 @@
               </div>
             </div>
           </div>
+        </div>
+      </template>
+      <template id="single-country-template">
+        <div class="country">
+          <div class="country-image">
+            <p class="country-flag"></p>
+          </div>
+          <div class="country-detail">
+            <div class="country-wrap">
+              <div class="country-info">
+                <div class="country-heading">
+                  <h4 class="country-heading-title">Romania</h4>
+                </div>
+                <div class="country-row">
+                  <p>Native Name:</p>
+                  <div class="native-name">Romania</div>
+                </div>
+                <div class="country-row">
+                  <p>Population:</p>
+                  <div class="population">1211231231</div>
+                </div>
+                <div class="country-row">
+                  <p>Region:</p>
+                  <div class="region">Europe</div>
+                </div>
+                <div class="country-row">
+                  <p>Sub Region:</p>
+                  <div class="sub-region">Western Europe</div>
+                </div>
+                <div class="country-row">
+                  <p>Capital:</p>
+                  <div class="capital">Bucharest</div>
+                </div>
+              </div>
+              <div class="country-info">
+                <div class="country-row">
+                  <p>Top Level Domain:</p>
+                  <div class="top-level-domain">ro</div>
+                </div>
+                <div class="country-row">
+                  <p>Currency:</p>
+                  <div class="currency">Leu</div>
+                </div>
+                <div class="country-row">
+                  <p>Languages:</p>
+                  <div class="languages">Romanian</div>
+                </div>
+              </div>
+            </div>
+            <div class="country-info">
+              <div class="country-border-row">
+                <p>Border Countries:</p>
+                <div class="borders-wrap">
+                  <div class="box no-margin box-shadow-effect">
+                    <p>France</p>
+                  </div>
+                  <div class="box no-margin box-shadow-effect">
+                    <p>Germany</p>
+                  </div>
+                  <div class="box no-margin box-shadow-effect">
+                    <p>Netherlands</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+      <template id="border-country-template">
+        <div class="box no-margin box-shadow-effect">
+          <p class="country">France</p>
         </div>
       </template>
       <!--Countries Container-->
