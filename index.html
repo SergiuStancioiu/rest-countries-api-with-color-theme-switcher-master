@@ -38,6 +38,11 @@
       </div>
     </header>
     <main class="main-container">
+      <div class="box back-btn box-shadow-effect hidden">
+        <a href="index.html"
+          ><i class="fa-solid fa-arrow-left-long"></i> Back</a
+        >
+      </div>
       <!--Search and Region Section-->
       <section class="search-region">
         <div class="search-wrap">
@@ -164,12 +169,14 @@
       </template>
       <template id="border-country-template">
         <div class="box no-margin box-shadow-effect">
-          <p class="country">France</p>
+          <p class="country-border">France</p>
         </div>
       </template>
       <!--Countries Container-->
-      <div class="countries-container"></div>
-      <div class="country-container"></div>
+      <div class="countries-container hidden"></div>
+      <!--Country Container-->
+
+      <div class="country-container hidden"></div>
     </main>
     <script src="js/app.js"></script>
     <script src="js/darkMode.js"></script>

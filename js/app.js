@@ -48,10 +48,11 @@ function populateCountry(data) {
   );
   const template = document.querySelector("#single-country-template");
 
-  const removeCountiresContainer = document.querySelector(
-    ".countries-container"
-  );
-  removeCountiresContainer.classList.remove("countries-container");
+  const removeCountiresContainer = document.querySelector(".country-container");
+  removeCountiresContainer.classList.remove("hidden");
+
+  const backBtn = document.querySelector(".back-btn");
+  backBtn.classList.remove("hidden");
 
   const nativeName = countryData.name.nativeName;
   let languagesArray = [];
@@ -97,7 +98,8 @@ function populateCountry(data) {
   countryData.borders.forEach((border) => {
     const cloneBorderCountryTemplate =
       borderCountryTemplate.content.cloneNode(true);
-    cloneBorderCountryTemplate.querySelector(".country").textContent = border;
+    cloneBorderCountryTemplate.querySelector(".country-border").textContent =
+      border;
 
     cloneTemplate
       .querySelector(".borders-wrap")
@@ -139,9 +141,12 @@ function fetchData(apiUrl) {
 function populateCountries(data) {
   const container = document.querySelector(".countries-container");
   const template = document.querySelector("#country-template");
-  const removeCountiresContainer = document.querySelector(".country-container");
 
-  removeCountiresContainer.classList.remove("country-container");
+  const removeCountiresContainer = document.querySelector(
+    ".countries-container"
+  );
+
+  removeCountiresContainer.classList.remove("hidden");
 
   container.innerHTML = "";
 
